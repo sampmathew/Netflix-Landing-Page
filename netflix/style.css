@@ -1,0 +1,346 @@
+body {
+    background-image: linear-gradient(rgb(103, 3, 33), black);
+    overflow-x:hidden;
+    height: 2590px;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #00000062;
+    width: 100%;
+}
+
+#logo {
+    height: 50px; 
+}
+
+.language-select {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 5px 15px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.language-select img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+#head1 {
+    width: 100%;
+    opacity: 0.8;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+    height: 600px;
+    width: 1400px;
+}
+
+#hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scrollbar-width: none; 
+    height: 600px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#hero::-webkit-scrollbar {
+    display: none;
+}
+
+.image-slider {
+    display: flex;
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    flex: 0 0 auto; 
+    width: 100%;
+    height: 600px;
+}
+
+
+#head1 {
+    opacity: 0.8;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h1 {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+h2{
+    color: white;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+button.left-button, button.right-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+button.left-button:hover, button.right-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.email-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px; 
+}
+
+.email-input {
+    padding: 15px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.304);
+    border: 2px solid #ccc;
+    width: 400px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.get-started-button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.get-started-button:hover {
+    background-color: darkred;
+}
+
+.trending-section {
+    margin-top: 50px;
+    color: white;
+}
+
+.trending-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left; 
+    margin-left: 15px; 
+}
+
+
+.movie-posters {
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scrollbar-width: none; 
+}
+
+.movie-posters img {
+    width: 240px;
+    aspect-ratio: 4 / 5;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid white;
+    flex: 0 0 auto; 
+}
+
+.movie-posters::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-posters::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.movie-posters::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.reasons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.reason-card {
+    background-color: rgb(44, 42, 42);
+    border-radius: 10px;
+    padding: 20px;
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+    position: relative; 
+}
+
+.icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.reason-card:nth-child(1) .icon {
+    background-image: url('star-icon.png'); 
+}
+
+.reason-card:nth-child(2) .icon {
+    background-image: url('handshake-icon.png'); 
+}
+
+.reason-card:nth-child(3) .icon {
+    background-image: url('heart-icon.png'); 
+}
+
+.reason-card:nth-child(4) .icon {
+    background-image: url('device-icon.png'); 
+}
+
+
+p {
+    margin: 0;
+}
+.footer {
+    max-width:100%;
+}
+.footer a {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.footer .contact {
+   color: gray;
+   padding-left: 8.3%;
+}
+.footer .columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer .column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.footer .netflix-india {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+#language2{
+    left: 50%;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 5px 15px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.get-started {
+    position: sticky;   
+    display: inline-block;
+    padding: 10px 20px;
+    left: 45%;
+    background-color: #e50914;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-card {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgb(44, 42, 42);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1900px; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#plus {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b3b3b3;
+    margin-left: auto; 
+}
+
